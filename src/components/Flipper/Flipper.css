@@ -1,0 +1,11 @@
+.flipper{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipper:hover{
+    transform: rotateY(180deg);
+}

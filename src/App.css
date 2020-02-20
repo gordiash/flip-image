@@ -1,0 +1,20 @@
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.Flipper__Input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 10%;
+}
+.Flipper__Input h2{
+    width: 100%;
+    text-align: center;
+}
+.Flipper__Input button{
+    margin: 0 15px;
+}
