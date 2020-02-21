@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Container from "./containers/container";
+import Card from "./components/Card/Card";
 import "./App.css";
 
 function App() {
@@ -21,7 +21,9 @@ function App() {
         <button >Upload</button>
       </div>
 
-      <Container imageUrl={imageUrl}/>
+      <Card imageUrl={imageUrl}/>
+
+      
     </div>
   );
 }

@@ -1,0 +1,97 @@
+.scene {
+    width: 450px;
+    height: 600px;
+    perspective: 600px;
+    border: 1px solid black;
+}
+
+.card {
+    top: 200px;
+    left: 150px;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.card__face--front {
+    background-color: red;
+
+}
+
+.card__face--back {
+    background-color: blue;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--back p {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+
+.up__arrow {
+    position: absolute;
+    top: -30px;
+    left: 200px;
+
+}
+
+.down__arrow {
+
+    position: absolute;
+    top: 610px;
+    left: 200px;
+}
+
+.right__arrow {
+    position: absolute;
+    top: 250px;
+    left: 460px;
+}
+
+.left__arrow {
+    position: absolute;
+    top: 250px;
+    left: -45px;
+}
+
+
+
+.flipRight{
+    transform-origin: right;
+    transform: rotateY(180deg);
+}
+.flipDown{
+    transform-origin: bottom;
+    transform: rotateX(-180deg);
+}
+.flipLeft{
+    transform-origin: left;
+    transform: rotateY(180deg);
+}
+.flipUp{
+    transform-origin: top;
+    transform: rotateX(180deg);
+}
